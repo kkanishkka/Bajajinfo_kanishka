@@ -9,7 +9,7 @@ const getAIResponse = async (question) => {
 
   try {
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+    const model = genAI.getGenerativeModel({ model: 'gemini2.5 Flash' });
     
     const prompt = `Answer the following question with a single word only. If the answer requires multiple words, provide the most important single word. Question: ${question}`;
     
